@@ -1,0 +1,53 @@
+/* CS 248 Fifteen Puzzle - Stylesheet */
+/* Tommy Tran */
+/* Created the body and layouy of the page, while using AI assisted tool to
+highlight the squares that can be moved */
+
+
+body {
+    font-family: serif;
+    font-size: 14pt;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: Candara, Corbel, monospace;
+}
+
+#puzzlearea {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.puzzlepiece {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: 5px solid black;
+    background-image: url('piplup-IR.jpg');
+    font-family: Candara, Corbel, monospace;
+    font-size: 40pt;
+    text-align: center;
+    line-height: 90px;
+    cursor: default;
+    transition: all 0.3s;
+}
+
+.puzzlepiece.movable:hover {
+    border-color: red;
+    color: red;
+    cursor: pointer;
+}
+
+#shufflebutton {
+    font-size: 14pt;
+    padding: 5px 15px;
+}
+
+#controls {
+    margin: 20px 0;
+}
